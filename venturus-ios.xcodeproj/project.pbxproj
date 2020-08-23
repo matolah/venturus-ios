@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75DAD09B23C973D1B264D4A9 /* Pods_venturus_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1FACB3138EE79D5F8C0609 /* Pods_venturus_ios.framework */; };
 		D556692B24EF151E0003BD80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556692A24EF151E0003BD80 /* AppDelegate.swift */; };
 		D556692D24EF151E0003BD80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556692C24EF151E0003BD80 /* SceneDelegate.swift */; };
-		D556692F24EF151E0003BD80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556692E24EF151E0003BD80 /* ViewController.swift */; };
+		D556692F24EF151E0003BD80 /* GalleryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556692E24EF151E0003BD80 /* GalleryListViewController.swift */; };
 		D556693224EF151E0003BD80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D556693024EF151E0003BD80 /* Main.storyboard */; };
 		D556693424EF15230003BD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D556693324EF15230003BD80 /* Assets.xcassets */; };
 		D556693724EF15230003BD80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D556693524EF15230003BD80 /* LaunchScreen.storyboard */; };
+		D556694424EF19CF0003BD80 /* ImgurService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556694324EF19CF0003BD80 /* ImgurService.swift */; };
+		D556694624EF1A700003BD80 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556694524EF1A700003BD80 /* Gallery.swift */; };
+		D556694A24EF1ABF0003BD80 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556694924EF1ABF0003BD80 /* GalleryViewModel.swift */; };
+		D556694C24EF1ACA0003BD80 /* GalleryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556694B24EF1ACA0003BD80 /* GalleryListViewModel.swift */; };
+		D556695224EF1DC60003BD80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556695124EF1DC60003BD80 /* Constants.swift */; };
+		D556695B24EF6DC60003BD80 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556695924EF6DC60003BD80 /* GalleryCell.swift */; };
+		D556695C24EF6DC60003BD80 /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D556695A24EF6DC60003BD80 /* GalleryCell.xib */; };
+		D57B69E224F1912600DA6222 /* CustomRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69E124F1912600DA6222 /* CustomRefreshControl.swift */; };
+		D5E44B5324F170C90080D86B /* InfiniteRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E44B5224F170C90080D86B /* InfiniteRotationAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D1FACB3138EE79D5F8C0609 /* Pods_venturus_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_venturus_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E2067A678DC881CB558B4C /* Pods-venturus-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-venturus-ios.release.xcconfig"; path = "Target Support Files/Pods-venturus-ios/Pods-venturus-ios.release.xcconfig"; sourceTree = "<group>"; };
+		9194C9BFFFC502FF44A56E33 /* Pods-venturus-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-venturus-ios.debug.xcconfig"; path = "Target Support Files/Pods-venturus-ios/Pods-venturus-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D556692724EF151E0003BD80 /* venturus-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "venturus-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D556692A24EF151E0003BD80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D556692C24EF151E0003BD80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D556692E24EF151E0003BD80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D556692E24EF151E0003BD80 /* GalleryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryListViewController.swift; sourceTree = "<group>"; };
 		D556693124EF151E0003BD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D556693324EF15230003BD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D556693624EF15230003BD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D556693824EF15230003BD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D556694324EF19CF0003BD80 /* ImgurService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurService.swift; sourceTree = "<group>"; };
+		D556694524EF1A700003BD80 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		D556694924EF1ABF0003BD80 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		D556694B24EF1ACA0003BD80 /* GalleryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryListViewModel.swift; sourceTree = "<group>"; };
+		D556695124EF1DC60003BD80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D556695924EF6DC60003BD80 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		D556695A24EF6DC60003BD80 /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
+		D57B69E124F1912600DA6222 /* CustomRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRefreshControl.swift; sourceTree = "<group>"; };
+		D5E44B5224F170C90080D86B /* InfiniteRotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteRotationAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DAD09B23C973D1B264D4A9 /* Pods_venturus_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C37B9DD93FE639831B80FE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9194C9BFFFC502FF44A56E33 /* Pods-venturus-ios.debug.xcconfig */,
+				79E2067A678DC881CB558B4C /* Pods-venturus-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		31A1882E4EC1C05DFFF85E67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D1FACB3138EE79D5F8C0609 /* Pods_venturus_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D556691E24EF151E0003BD80 = {
 			isa = PBXGroup;
 			children = (
 				D556692924EF151E0003BD80 /* venturus-ios */,
 				D556692824EF151E0003BD80 /* Products */,
+				2C37B9DD93FE639831B80FE3 /* Pods */,
+				31A1882E4EC1C05DFFF85E67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +98,80 @@
 		D556692924EF151E0003BD80 /* venturus-ios */ = {
 			isa = PBXGroup;
 			children = (
-				D556692A24EF151E0003BD80 /* AppDelegate.swift */,
-				D556692C24EF151E0003BD80 /* SceneDelegate.swift */,
-				D556692E24EF151E0003BD80 /* ViewController.swift */,
-				D556693024EF151E0003BD80 /* Main.storyboard */,
-				D556693324EF15230003BD80 /* Assets.xcassets */,
-				D556693524EF15230003BD80 /* LaunchScreen.storyboard */,
-				D556693824EF15230003BD80 /* Info.plist */,
+				D556694224EF17330003BD80 /* App */,
+				D556694124EF172D0003BD80 /* Models */,
+				D556694024EF17230003BD80 /* GalleryList */,
+				D556693F24EF171D0003BD80 /* Networking */,
+				D556693E24EF15530003BD80 /* Resources */,
 			);
 			path = "venturus-ios";
+			sourceTree = "<group>";
+		};
+		D556693E24EF15530003BD80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5E44B5424F170CF0080D86B /* Extensions */,
+				D57B69E324F1938400DA6222 /* Reusable */,
+				D556693524EF15230003BD80 /* LaunchScreen.storyboard */,
+				D556693024EF151E0003BD80 /* Main.storyboard */,
+				D556693324EF15230003BD80 /* Assets.xcassets */,
+				D556693824EF15230003BD80 /* Info.plist */,
+				D556695124EF1DC60003BD80 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D556693F24EF171D0003BD80 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D556694324EF19CF0003BD80 /* ImgurService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D556694024EF17230003BD80 /* GalleryList */ = {
+			isa = PBXGroup;
+			children = (
+				D556692E24EF151E0003BD80 /* GalleryListViewController.swift */,
+				D556694924EF1ABF0003BD80 /* GalleryViewModel.swift */,
+				D556694B24EF1ACA0003BD80 /* GalleryListViewModel.swift */,
+				D556695924EF6DC60003BD80 /* GalleryCell.swift */,
+				D556695A24EF6DC60003BD80 /* GalleryCell.xib */,
+			);
+			path = GalleryList;
+			sourceTree = "<group>";
+		};
+		D556694124EF172D0003BD80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D556694524EF1A700003BD80 /* Gallery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D556694224EF17330003BD80 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D556692A24EF151E0003BD80 /* AppDelegate.swift */,
+				D556692C24EF151E0003BD80 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D57B69E324F1938400DA6222 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				D57B69E124F1912600DA6222 /* CustomRefreshControl.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		D5E44B5424F170CF0080D86B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5E44B5224F170C90080D86B /* InfiniteRotationAnimation.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D556693B24EF15230003BD80 /* Build configuration list for PBXNativeTarget "venturus-ios" */;
 			buildPhases = (
+				05ECF72988BB033BAF483820 /* [CP] Check Pods Manifest.lock */,
 				D556692324EF151E0003BD80 /* Sources */,
 				D556692424EF151E0003BD80 /* Frameworks */,
 				D556692524EF151E0003BD80 /* Resources */,
+				62C5CA90263A141B68FD0753 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D556695C24EF6DC60003BD80 /* GalleryCell.xib in Resources */,
 				D556693724EF15230003BD80 /* LaunchScreen.storyboard in Resources */,
 				D556693424EF15230003BD80 /* Assets.xcassets in Resources */,
 				D556693224EF151E0003BD80 /* Main.storyboard in Resources */,
@@ -133,14 +243,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05ECF72988BB033BAF483820 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-venturus-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62C5CA90263A141B68FD0753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-venturus-ios/Pods-venturus-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-venturus-ios/Pods-venturus-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-venturus-ios/Pods-venturus-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D556692324EF151E0003BD80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D556692F24EF151E0003BD80 /* ViewController.swift in Sources */,
+				D556692F24EF151E0003BD80 /* GalleryListViewController.swift in Sources */,
+				D556694A24EF1ABF0003BD80 /* GalleryViewModel.swift in Sources */,
+				D556694C24EF1ACA0003BD80 /* GalleryListViewModel.swift in Sources */,
+				D556695B24EF6DC60003BD80 /* GalleryCell.swift in Sources */,
+				D57B69E224F1912600DA6222 /* CustomRefreshControl.swift in Sources */,
+				D5E44B5324F170C90080D86B /* InfiniteRotationAnimation.swift in Sources */,
+				D556694624EF1A700003BD80 /* Gallery.swift in Sources */,
 				D556692B24EF151E0003BD80 /* AppDelegate.swift in Sources */,
+				D556694424EF19CF0003BD80 /* ImgurService.swift in Sources */,
 				D556692D24EF151E0003BD80 /* SceneDelegate.swift in Sources */,
+				D556695224EF1DC60003BD80 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +442,12 @@
 		};
 		D556693C24EF15230003BD80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9194C9BFFFC502FF44A56E33 /* Pods-venturus-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7YNGR3R5C;
-				INFOPLIST_FILE = "venturus-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/venturus-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +461,12 @@
 		};
 		D556693D24EF15230003BD80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E2067A678DC881CB558B4C /* Pods-venturus-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7YNGR3R5C;
-				INFOPLIST_FILE = "venturus-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/venturus-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

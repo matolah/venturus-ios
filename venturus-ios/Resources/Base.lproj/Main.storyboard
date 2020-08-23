@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gallery List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GalleryListViewController" customModule="venturus_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Weekly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvA-tV-dgV">
+                                <rect key="frame" x="20" y="74" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IU6-xd-0d2">
+                                <rect key="frame" x="0.0" y="125" width="414" height="771"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="PgQ-Lc-uhf">
+                                    <size key="itemSize" width="340" height="240"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRc-u5-EL0">
+                                <rect key="frame" x="0.0" y="110" width="414" height="786"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reload" translatesAutoresizingMaskIntoConstraints="NO" id="I3F-qy-xUX">
+                                        <rect key="frame" x="187.5" y="379.5" width="39" height="27"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh, failed to load galleries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq7-sW-QW7">
+                                        <rect key="frame" x="108" y="421.5" width="198" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="IconColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="I3F-qy-xUX" firstAttribute="centerX" secondItem="kRc-u5-EL0" secondAttribute="centerX" id="BvR-7o-b3f"/>
+                                    <constraint firstItem="rq7-sW-QW7" firstAttribute="centerX" secondItem="kRc-u5-EL0" secondAttribute="centerX" id="Wqb-sx-ePB"/>
+                                    <constraint firstItem="rq7-sW-QW7" firstAttribute="top" secondItem="I3F-qy-xUX" secondAttribute="bottom" constant="15" id="lzg-D9-eP2"/>
+                                    <constraint firstItem="I3F-qy-xUX" firstAttribute="centerY" secondItem="kRc-u5-EL0" secondAttribute="centerY" id="mC8-fN-QD8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kRc-u5-EL0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Co-nq-Gpv"/>
+                            <constraint firstItem="IU6-xd-0d2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Gg-en-K5a"/>
+                            <constraint firstAttribute="bottom" secondItem="kRc-u5-EL0" secondAttribute="bottom" id="Gzf-K2-0xX"/>
+                            <constraint firstItem="vvA-tV-dgV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L5n-4h-EVB"/>
+                            <constraint firstItem="vvA-tV-dgV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Nme-A1-1FW"/>
+                            <constraint firstItem="kRc-u5-EL0" firstAttribute="top" secondItem="vvA-tV-dgV" secondAttribute="bottom" id="dyW-VS-pnU"/>
+                            <constraint firstAttribute="trailing" secondItem="kRc-u5-EL0" secondAttribute="trailing" id="hr2-Ji-g09"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vvA-tV-dgV" secondAttribute="trailing" constant="20" id="ikB-h8-puY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IU6-xd-0d2" secondAttribute="trailing" id="msA-0S-Q4T"/>
+                            <constraint firstItem="IU6-xd-0d2" firstAttribute="top" secondItem="vvA-tV-dgV" secondAttribute="bottom" constant="15" id="n9w-CJ-0b0"/>
+                            <constraint firstAttribute="bottom" secondItem="IU6-xd-0d2" secondAttribute="bottom" id="ydJ-kQ-vLF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="IU6-xd-0d2" id="gci-ez-6p0"/>
+                        <outlet property="emptyView" destination="kRc-u5-EL0" id="Qqq-od-poN"/>
+                        <outlet property="reloadImageView" destination="I3F-qy-xUX" id="vWN-ZL-0BB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="reload" width="39" height="27"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.17299999296665192" green="0.18000000715255737" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="IconColor">
+            <color red="0.68599998950958252" green="0.68599998950958252" blue="0.68599998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
